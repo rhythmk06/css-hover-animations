@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Transition</title>
+    <style type="text/css">
+        .block {
+        height: 300px;
+        width: 300px;
+        background gray;
+        border: 5px solid yellow;
+        overflow: hidden;
+    }
+
+    .block:hover {
+
+        left 200px;
+    }
+
+    .mask {
+
+        width: 300px;
+        height: 300px;
+        background-color: green;
+        position: relative;
+        left: 360px;
+        transition-duration: 0.5s;
+    }
+
+    .block:hover .mask {
+
+        border-radius: 20%;
+        left: 100px;
+        transform: rotate(-50deg);
+    }
+    /*
+
+    .block .blockin img {
+        height: 300px;
+        width: 300px;
+        transition-duration: 0.7s;
+        position: relative;
+        left -300px;
+        opacity: 0.5;
+    }
+
+    .block:hover .blockin img {
+        left 0px;
+        transform: scale(5);
+        opacity: 1;
+        
+    }
+
+    /*--------BLOCK 2--------------*/
+
+    .block2 {
+
+        height: 300px;
+        width: 300px;
+        background: gray;
+        border: 5px solid red;
+        overflow: hidden;
+        margin-top: 20px;
+        margin: 0 auto;
+    }
+
+    .block2 .b1 {
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+        transition-duration: 0.7s;
+        position: relative;
+        left: -300px;
+    }
+
+    .block2:hover .b1 {
+
+        left: 0px;
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="block">
+        <!--<div class="blockin"><img src="C:\Users\Rhythm\Desktop\work\CSS3\OriginalHoverEffects\images\1.jpg" </div>-->
+        <div class="mask"></div>
+    </div>
+    <div class="block2">
+        <div class="b1"></div>
+        <div class="b2"></div>
+    </div>
+</body>
+
+</html>
